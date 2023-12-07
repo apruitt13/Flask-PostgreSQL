@@ -127,7 +127,7 @@ Before starting this project make sure to have Flask installed on the computer o
 4. cd into the fold with app.py
 
 5. Use the command python app.py
-<img src="images/commandline.png" alt="Logo" width="80" height="80">
+<img src="images/commandline.png" alt="Logo" width="993" height="110">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
