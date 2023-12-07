@@ -173,17 +173,19 @@ _For more examples, please refer to the [Documentation](https://example.com)_
   cur.execute( 
     '''CREATE TABLE IF NOT EXISTS todo (id serial  
     PRIMARY KEY, name varchar(100), note text);''')
-
+    ```
+    ```sh
     # Insert some data into the table
     cur.execute(
         '''INSERT INTO todo (name, note) VALUES
             ('Update Resume', 'Make sure to add current job.'), ('Dishes', 'Finish by Friday'), ('Shopping', 'Prep for mom and dad');''')
     ```
+
 4. Throughout the rest app.py there are different functions that allow different queries to allow full CRUD functionality. CRUD = Create, Read, Update, Delete.
-    Create = def create() - Uses the SQL command Insert INTO
-    Read = def index() - Displays the data using SELECT * FROM
-    Update = def update() - Allows data to be updated using UPDATE
-    Delete = def delete() - Allows data to be deleted using DELETE FROM 
+    * Create = def create() - Uses the SQL command Insert INTO
+    * Read = def index() - Displays the data using SELECT * FROM
+    * Update = def update() - Allows data to be updated using UPDATE
+    * Delete = def delete() - Allows data to be deleted using DELETE FROM 
 
 5. Using these basic commands the program can be modified to accomodate different SQL queries.
 
