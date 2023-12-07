@@ -165,7 +165,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ### Database Interaction
 1. Interacting with the data is done through SQL queries. With PostgreSQL you can use SQL or its own dialect of SQL. 
 
-2. Here is a list of the SQL [commands](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/#short-overview-on-sql)_.
+2. Here is a list of the SQL [commands](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/#short-overview-on-sql).
 
 3. Within app.py some basic SQL queries are performed at the beginning. cur.execute is how the SQL commands are sent. The first two commands of CREATE TABLE IF NOT EXISTS and INSERT INTO will create a table (if there isn't one) and will insert some data into it.
     
@@ -174,7 +174,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     '''CREATE TABLE IF NOT EXISTS todo (id serial  
     PRIMARY KEY, name varchar(100), note text);''')
     ```
-    
+
     ```sh
     # Insert some data into the table
     cur.execute(
