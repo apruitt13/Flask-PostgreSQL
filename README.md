@@ -170,10 +170,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 3. Within app.py some basic SQL queries are performed at the beginning. cur.execute is how the SQL commands are sent. The first two commands of CREATE TABLE IF NOT EXISTS and INSERT INTO will create a table (if there isn't one) and will insert some data into it.
     
     ```sh
-  cur.execute( 
+    cur.execute( 
     '''CREATE TABLE IF NOT EXISTS todo (id serial  
     PRIMARY KEY, name varchar(100), note text);''')
     ```
+    
     ```sh
     # Insert some data into the table
     cur.execute(
