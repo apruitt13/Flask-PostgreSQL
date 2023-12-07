@@ -123,7 +123,7 @@ Before starting this project you need to make sure you have a couple of things i
 * The third item is to download the current version of PostgreSQL. This allows psycopg2 to connect with the PostgreSQL server and client library.
   This cane be installed directly from postgresql.org.
   ```sh
-  [download](https://www.postgresql.org/download/)
+  [download](https://www.postgresql.org/download/)_
   ```
 ### Installation
 
