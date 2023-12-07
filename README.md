@@ -33,7 +33,8 @@
 <br />
 <div align="center">
   <a href="https://github.com/apruitt13/Flask-PostgreSQL">
-    [![python][Python]][Python-url] [![Flask][Flask]][Flask-url]
+    <img src="https://flask.palletsprojects.com/en/3.0.x/_images/flask-horizontal.png" alt="Logo" width="80" height="80">
+    <img src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">ToDo with Flask and PostgreSQL</h3>
