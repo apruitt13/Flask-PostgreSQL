@@ -139,6 +139,10 @@ Before starting this project make sure to have Flask installed on the computer o
 
 This is a useful project to begin exploring how to use create a basic app that uses Flask and PostgresSQl with full CRUD operations. This project was based on the tutorial from [GeeksForGeeks](https://www.geeksforgeeks.org/making-a-flask-app-using-a-postgresql-database/)_.
 
+You can also modify and view your tables using the pgAdmin 4 program.
+
+<img src="images/pgAdmin 4.png" alt="Logo" width="993" height="110">
+
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
