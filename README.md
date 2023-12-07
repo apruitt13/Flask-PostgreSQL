@@ -218,7 +218,7 @@ Project Link: [https://github.com/apruitt13/Flask-PostgreSQL](https://github.com
 [issues-shield]: https://img.shields.io/github/issues/apruitt13/Flask-PostgreSQL.svg?style=for-the-badge
 [issues-url]: https://github.com/apruitt13/Flask-PostgreSQL/issues
 [license-shield]: https://img.shields.io/github/license/apruitt13/Flask-PostgreSQL.svg?style=for-the-badge
-[license-url]: https://github.com/apruitt13/Flask-PostgreSQL/blob/master/LICENSE.txt
+[license-url]: https://github.com/apruitt13/Flask-PostgreSQL/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/apruitt13
 [product-screenshot]: images/project.png
