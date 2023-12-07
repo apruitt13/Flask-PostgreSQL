@@ -73,6 +73,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="Database Interaction">Database Interaction</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -123,7 +124,7 @@ Before starting this project you need to make sure you have a couple of things i
 * The third item is to download the current version of PostgreSQL. This allows psycopg2 to connect with the PostgreSQL server and client library.
   This cane be installed directly from postgresql.org.
   ```sh
-  [download](https://www.postgresql.org/download/)_
+  https://www.postgresql.org/download/
   ```
 ### Installation
 
@@ -140,6 +141,11 @@ Before starting this project you need to make sure you have a couple of things i
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+6. Copy the address provided into your internet browswer of choice.
+
+7. Once opened you should see the ToDo list appear with all functionalities.
+
+ 
 
 
 <!-- USAGE EXAMPLES -->
@@ -156,6 +162,30 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+### Database Interaction
+1. Interacting with the data is done through SQL queries. With PostgreSQL you can use SQL or its own dialect of SQL. 
+
+2. Here is a list of the SQL [commands](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/#short-overview-on-sql)_.
+
+3. Within app.py some basic SQL queries are performed at the beginning. cur.execute is how the SQL commands are sent. The first two commands of CREATE TABLE IF NOT EXISTS and INSERT INTO will create a table (if there isn't one) and will insert some data into it.
+    
+    ```sh
+  cur.execute( 
+    '''CREATE TABLE IF NOT EXISTS todo (id serial  
+    PRIMARY KEY, name varchar(100), note text);''')
+
+    # Insert some data into the table
+    cur.execute(
+        '''INSERT INTO todo (name, note) VALUES
+            ('Update Resume', 'Make sure to add current job.'), ('Dishes', 'Finish by Friday'), ('Shopping', 'Prep for mom and dad');''')
+    ```
+4. Throughout the rest app.py there are different functions that allow different queries to allow full CRUD functionality. CRUD = Create, Read, Update, Delete.
+    Create = def create() - Uses the SQL command Insert INTO
+    Read = def index() - Displays the data using SELECT * FROM
+    Update = def update() - Allows data to be updated using UPDATE
+    Delete = def delete() - Allows data to be deleted using DELETE FROM 
+
+5. Using these basic commands the program can be modified to accomodate different SQL queries.
 
 <!-- ROADMAP -->
 ## Roadmap
