@@ -141,7 +141,7 @@ This is a useful project to begin exploring how to use create a basic app that u
 
 You can also modify and view your tables using the pgAdmin 4 program.
 
-<img src="images/pgAdmin 4.png" alt="Logo" width="993" height="110">
+<img src="images/pgAdmin 4.png" alt="Logo" width="993" height="534">
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
