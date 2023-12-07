@@ -33,7 +33,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/apruitt13/Flask-PostgreSQL">
-    <img src="images/project.png" alt="Logo" width="80" height="80">
+    [![python][Python]][Python-url] [![Flask][Flask]][Flask-url]
   </a>
 
 <h3 align="center">ToDo with Flask and PostgreSQL</h3>
@@ -85,7 +85,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="images/project.png" alt="Logo" width="80" height="80">
+<img src="images/project.png" alt="Logo" width="990" height="685">
 
 A small project to begin learning Flask and PostgreSQL. It started out as a simple CRUD application for adding grocery items to a list. I then changed it to a basic ToDo list with CRUD functions.
 
