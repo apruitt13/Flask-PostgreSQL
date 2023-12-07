@@ -111,12 +111,20 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Before starting this project make sure to have Flask installed on the computer or in the directory of the project.
-* npm
+Before starting this project you need to make sure you have a couple of things installed on your computer..
+* The first item need is Flask. Make sure it is installed on the computer or in the directory where app.py is located.
   ```sh
   pip install Flask
   ```
-
+* The second item is psycopg2. This allows python to speak with PostgreSQL. It can be installed the same way as Flask.
+  ```sh
+  pip install psycopg2-binary
+  ```
+* The third item is to download the current version of PostgreSQL. This allows psycopg2 to connect with the PostgreSQL server and client library.
+  This cane be installed directly from postgresql.org.
+  ```sh
+  [download](https://www.postgresql.org/download/)
+  ```
 ### Installation
 
 1. Clone the repo
