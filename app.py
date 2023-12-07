@@ -13,16 +13,16 @@ conn = psycopg2.connect(database='flask_db',
 cur = conn.cursor()
 
 # if you already have any table or not it doesn't matter
-# will create a products table for you.
+# will create a todo table for you.
 
 cur.execute( 
-    '''CREATE TABLE IF NOT EXISTS products (id serial  
-    PRIMARY KEY, name varchar(100), price float);''') 
+    '''CREATE TABLE IF NOT EXISTS todo (id serial  
+    PRIMARY KEY, name varchar(100), note text);''')
 
 # Insert some data into the table
 cur.execute(
-    '''INSERT INTO products (name, price) VALUES 
-        ('Apple', 1.99), ('Orange', 0.99), ('Banana', 0.59);''')
+    '''INSERT INTO todo (name, note) VALUES
+        ('Update Resume', 'Make sure to add current job.'), ('Dishes', 'Finish by Friday'), ('Shopping', 'Prep for mom and dad');''')
 
 # Commit the changes
 conn.commit()
@@ -42,8 +42,8 @@ def index():
     # Create a cursor
     cur = conn.cursor()
 
-    # Select all products from the table
-    cur.execute('''Select * FROM products''')
+    # Select all todos from the table
+    cur.execute('''Select * FROM todo''')
 
     # Fetch the data
     data = cur.fetchall()
@@ -64,13 +64,13 @@ def create():
 
     # Get the data from the form
     name = request.form['name']
-    price = request.form['price']
+    note = request.form['note']
 
     # Insert the data into the table
     cur.execute(
-        '''INSERT INTO products \
-        (name, price) VALUES (%s, %s)''',
-        (name, price))
+        '''INSERT INTO todo \
+        (name, note) VALUES (%s, %s)''',
+        (name, note))
     
     # commit the changes
     conn.commit()
@@ -92,13 +92,13 @@ def update():
 
     # Get the data from the form
     name = request.form['name']
-    price = request.form['price']
+    note = request.form['note']
     id = request.form['id']
 
     # update the data in the table
     cur.execute(
-        '''UPDATE products SET name=%s,
-        price=%s WHERE id=%s''', (name, price, id))
+        '''UPDATE todo SET name=%s,
+        note=%s WHERE id=%s''', (name, note, id))
     
     # commit the changes
     conn.commit()
@@ -117,7 +117,7 @@ def delete():
     id = request.form['id'] 
   
     # Delete the data from the table 
-    cur.execute('''DELETE FROM products WHERE id=%s''', (id,)) 
+    cur.execute('''DELETE FROM todo WHERE id=%s''', (id,)) 
   
     # commit the changes 
     conn.commit() 

@@ -1,15 +1,15 @@
 <html>
     <head>
-        <title> Grocery List</title>
+        <title> Todo List</title>
     </head>
     <body>
-        <h1> Grocery List</h1>
+        <h1> Todo List</h1>
         <table>
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>Price</th>
+                    <th>Note</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -23,7 +23,7 @@
                     <form action="/update" method="post">
                         <input type="hidden" name="id" value="{{ row[0] }}">
                         <input type="text" name="name" value="{{ row[1] }}">
-                        <input type="text" name="price" value="{{ row[2] }}">
+                        <input type="text" name="note" value="{{ row[2] }}">
                         <input type="submit" value="Update">
                     </form>
                     <form action="/delete" method="post"> 
@@ -38,7 +38,7 @@
         <h2>Create a new item</h2>
         <form action="/create" method="post">
             <input type="text" name="name" placeholder="Name">
-            <input type="text" name="price" placeholder="Price">
+            <input type="text" name="note" placeholder="Note">
             <input type="submit" value="Create">
         </form>
     </body>
