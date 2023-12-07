@@ -125,7 +125,7 @@ Before starting this project make sure to have Flask installed on the computer o
    ```
 3. Open your command prompt
 
-4. cd into the fold with app.py
+4. cd into the folder with app.py
 
 5. Use the command python app.py
 <img src="images/commandline.png" alt="Logo" width="993" height="110">
@@ -137,7 +137,7 @@ Before starting this project make sure to have Flask installed on the computer o
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This is a useful project to begin exploring how to use create a basic app that uses Flask and PostgresSQl with full CRUD operations. This project was based on the tutorial from [GeeksForGeeks](https://www.geeksforgeeks.org/making-a-flask-app-using-a-postgresql-database/)_.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -148,10 +148,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Make it more visually appealing.
+- [ ] Show accomplished tasks.
+- [ ] Options to share the list with others.
 
 See the [open issues](https://github.com/apruitt13/Flask-PostgreSQL/issues) for a full list of proposed features (and known issues).
 
