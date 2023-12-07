@@ -32,23 +32,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/apruitt13/Flask-PostgreSQL">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">ToDo with Flask and PostgreSQL</h3>
 
   <p align="center">
-    project_description
+    A small project to explore Flask and PostgreSQL.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/apruitt13/Flask-PostgreSQL"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/apruitt13/Flask-PostgreSQL">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/apruitt13/Flask-PostgreSQL/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/apruitt13/Flask-PostgreSQL/issues">Request Feature</a>
   </p>
 </div>
 
